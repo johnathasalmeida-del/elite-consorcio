@@ -55,11 +55,12 @@ h1 .g{color:var(--green)}
 .radio-opt.sel .r-dot{border-color:var(--green)}
 .radio-opt.sel .r-dot::after{opacity:1;transform:scale(1)}
 .r-text{font-size:13px;color:var(--text);line-height:1.4}
+.r-text small{display:block;font-size:11px;color:var(--muted);margin-top:2px}
 .slider-block{background:var(--green-faint);border:1px solid var(--green-border);border-radius:12px;padding:20px 18px;margin-bottom:16px}
-.slider-valor{font-family:'Rajdhani',sans-serif;font-size:32px;font-weight:700;color:var(--green);text-align:center;display:block;margin-bottom:4px;transition:all .15s ease}
+.slider-valor{font-family:'Rajdhani',sans-serif;font-size:32px;font-weight:700;color:var(--green);text-align:center;display:block;margin-bottom:4px}
 .slider-label-sub{font-size:11px;color:var(--muted);text-align:center;margin-bottom:16px;letter-spacing:.04em}
 .range-wrap{position:relative;padding:0 2px}
-input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;background:linear-gradient(to right,var(--green) 0%,var(--green) 50%,var(--border) 50%,var(--border) 100%);border-radius:3px;outline:none;cursor:pointer;transition:background .1s}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;background:linear-gradient(to right,var(--green) 0%,var(--green) 50%,var(--border) 50%,var(--border) 100%);border-radius:3px;outline:none;cursor:pointer}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:24px;height:24px;border-radius:50%;background:var(--white);border:2px solid var(--green);cursor:pointer;box-shadow:0 2px 8px rgba(23,196,62,.25);transition:transform .15s ease}
 input[type=range]::-webkit-slider-thumb:active{transform:scale(1.15)}
 input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--white);border:2px solid var(--green);cursor:pointer;box-shadow:0 2px 8px rgba(23,196,62,.25)}
@@ -133,6 +134,21 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
         <p class="depo-text">"Fiz dois consórcios ao mesmo tempo — um imóvel e um carro. O time da Elite estruturou tudo pra caber no meu orçamento. Incrível."</p>
         <div class="depo-author"><div class="depo-avatar">FB</div><span class="depo-name">Felipe B. — imóvel e veículo conquistados</span></div>
       </div>
+      <div class="depo-card" id="depo-imovel-recurso">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Tinha o recurso guardado e não sabia o melhor caminho. A Elite me mostrou como usar meu dinheiro como lance e fui contemplado na hora. Melhor negócio que fiz."</p>
+        <div class="depo-author"><div class="depo-avatar">RM</div><span class="depo-name">Ricardo M. — usou o lance e saiu na frente</span></div>
+      </div>
+      <div class="depo-card" id="depo-imovel-planejado">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Planejei meu imóvel com calma. A Elite me ajudou a organizar tudo em 2 anos e hoje tenho minha casa no meu nome."</p>
+        <div class="depo-author"><div class="depo-avatar">PS</div><span class="depo-name">Priscila S. — planejamento que funcionou</span></div>
+      </div>
+      <div class="depo-card" id="depo-imovel-longo">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Uso o consórcio como investimento patrimonial. Parcela baixa, sem juros, e meu patrimônio crescendo todo mês. A Elite me abriu os olhos."</p>
+        <div class="depo-author"><div class="depo-avatar">AN</div><span class="depo-name">André N. — consórcio como investimento</span></div>
+      </div>
       <div class="depo-card" id="depo-urgente-carro">
         <div class="depo-stars">★★★★★</div>
         <p class="depo-text">"Precisava do carro com urgência. A Elite me orientou na estratégia de lance e fui contemplado no 3º mês. Atendimento impecável."</p>
@@ -147,21 +163,6 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
         <div class="depo-stars">★★★★★</div>
         <p class="depo-text">"Sempre troquei de carro no financiamento e pagava muito de juros. Com a Elite aprendi a fazer isso de forma inteligente e econômica."</p>
         <div class="depo-author"><div class="depo-avatar">GS</div><span class="depo-name">Gustavo S. — troca consciente sem juros</span></div>
-      </div>
-      <div class="depo-card" id="depo-curto-imovel">
-        <div class="depo-stars">★★★★★</div>
-        <p class="depo-text">"Queria minha casa logo. A Elite me mostrou a estratégia de lance certa e em poucos meses estava com as chaves na mão."</p>
-        <div class="depo-author"><div class="depo-avatar">CS</div><span class="depo-name">Camila S. — chaves em mãos mais rápido</span></div>
-      </div>
-      <div class="depo-card" id="depo-medio">
-        <div class="depo-stars">★★★★★</div>
-        <p class="depo-text">"Planejei meu imóvel com calma. A Elite me ajudou a organizar tudo em 2 anos e hoje tenho minha casa no meu nome."</p>
-        <div class="depo-author"><div class="depo-avatar">PS</div><span class="depo-name">Priscila S. — planejamento que funcionou</span></div>
-      </div>
-      <div class="depo-card" id="depo-longo">
-        <div class="depo-stars">★★★★★</div>
-        <p class="depo-text">"Uso o consórcio como investimento. Parcela baixa, sem juros, e meu patrimônio crescendo todo mês. A Elite me abriu os olhos."</p>
-        <div class="depo-author"><div class="depo-avatar">AN</div><span class="depo-name">André N. — consórcio como investimento</span></div>
       </div>
     </div>
 
@@ -209,32 +210,41 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
         </div>
       </div>
 
-      <!-- ETAPA 3: PRAZO — dinâmico por tipo de bem -->
+      <!-- ETAPA 3: PRAZO — dinâmico por bem -->
       <div id="step-3" style="display:none">
 
-        <!-- Prazo para IMÓVEL ou AMBOS -->
-        <div id="prazo-imovel">
-          <p class="q-label">Qual seu horizonte de planejamento?</p>
+        <!-- Prazo IMÓVEL -->
+        <div id="prazo-imovel" style="display:none">
+          <p class="q-label">Qual sua situação para o imóvel?</p>
           <div class="radio-group">
-            <label class="radio-opt" onclick="pick(this,'prazo','curto')">
-              <input type="radio" name="prazo" value="curto">
+            <label class="radio-opt" onclick="pick(this,'prazo','recurso')">
+              <input type="radio" name="prazo" value="recurso">
               <span class="r-dot"></span>
-              <span class="r-text">Preciso do bem em até 12 meses</span>
+              <span class="r-text">
+                Urgente — tenho recurso disponível para dar o lance
+                <small>Quero ser contemplado o quanto antes</small>
+              </span>
             </label>
-            <label class="radio-opt" onclick="pick(this,'prazo','medio')">
-              <input type="radio" name="prazo" value="medio">
+            <label class="radio-opt" onclick="pick(this,'prazo','planejado')">
+              <input type="radio" name="prazo" value="planejado">
               <span class="r-dot"></span>
-              <span class="r-text">Tenho de 1 a 3 anos de planejamento</span>
+              <span class="r-text">
+                Planejado — tenho de 1 a 3 anos
+                <small>Sem pressa, quero organizar bem</small>
+              </span>
             </label>
-            <label class="radio-opt" onclick="pick(this,'prazo','longo')">
-              <input type="radio" name="prazo" value="longo">
+            <label class="radio-opt" onclick="pick(this,'prazo','investimento')">
+              <input type="radio" name="prazo" value="investimento">
               <span class="r-dot"></span>
-              <span class="r-text">Quero investir no longo prazo (3+ anos)</span>
+              <span class="r-text">
+                Investimento — pensando no longo prazo
+                <small>Quero construir patrimônio</small>
+              </span>
             </label>
           </div>
         </div>
 
-        <!-- Prazo para VEÍCULO -->
+        <!-- Prazo VEÍCULO -->
         <div id="prazo-veiculo" style="display:none">
           <p class="q-label">Como está seu plano para o veículo?</p>
           <div class="radio-group">
@@ -252,6 +262,37 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
               <input type="radio" name="prazo" value="consciente">
               <span class="r-dot"></span>
               <span class="r-text">Planejando para uma troca consciente</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Prazo AMBOS -->
+        <div id="prazo-ambos" style="display:none">
+          <p class="q-label">Qual sua situação atual?</p>
+          <div class="radio-group">
+            <label class="radio-opt" onclick="pick(this,'prazo','recurso')">
+              <input type="radio" name="prazo" value="recurso">
+              <span class="r-dot"></span>
+              <span class="r-text">
+                Urgente — tenho recurso para dar o lance
+                <small>Quero ser contemplado o quanto antes</small>
+              </span>
+            </label>
+            <label class="radio-opt" onclick="pick(this,'prazo','planejado')">
+              <input type="radio" name="prazo" value="planejado">
+              <span class="r-dot"></span>
+              <span class="r-text">
+                Planejado — tenho de 1 a 3 anos
+                <small>Quero organizar bem os dois consórcios</small>
+              </span>
+            </label>
+            <label class="radio-opt" onclick="pick(this,'prazo','investimento')">
+              <input type="radio" name="prazo" value="investimento">
+              <span class="r-dot"></span>
+              <span class="r-text">
+                Investimento — pensando no longo prazo
+                <small>Construir patrimônio com inteligência</small>
+              </span>
             </label>
           </div>
         </div>
@@ -277,7 +318,7 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
         </div>
         <div class="urgencia" id="urgencia">
           <strong>Você é prioridade na nossa fila</strong>
-          <p>Atendimento preferencial para quem precisa com urgência. Nosso especialista retorna em até 30 minutos.</p>
+          <p>Temos especialistas em estratégia de lance para quem tem recurso disponível. Retorno em até 30 minutos.</p>
         </div>
         <button class="btn-cta" onclick="enviar()">
           <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.09 1.18C.09.6.54.04 1.12.04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L5.43 7.81a16 16 0 006.29 6.29l.95-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -307,10 +348,16 @@ input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;bac
 <script>
 const st = {bem:null, credito:100000, prazo:null, step:1};
 
-const depoMapBem   = {imovel:'depo-imovel', veiculo:'depo-veiculo', ambos:'depo-ambos'};
+const depoMapBem = {
+  imovel:'depo-imovel', veiculo:'depo-veiculo', ambos:'depo-ambos'
+};
 const depoMapPrazo = {
-  curto:'depo-curto-imovel', medio:'depo-medio', longo:'depo-longo',
-  urgente:'depo-urgente-carro', '3meses':'depo-3meses-carro', consciente:'depo-consciente-carro'
+  recurso:'depo-imovel-recurso',
+  planejado:'depo-imovel-planejado',
+  investimento:'depo-imovel-longo',
+  urgente:'depo-urgente-carro',
+  '3meses':'depo-3meses-carro',
+  consciente:'depo-consciente-carro'
 };
 
 function fmtBRL(v){
@@ -337,12 +384,11 @@ function pick(el, group, val){
   el.classList.add('sel');
   st[group] = val;
 
-  if(group==='bem'){
-    showDepo(depoMapBem[val] || 'depo-default');
-  } else if(group==='prazo'){
-    showDepo(depoMapPrazo[val] || 'depo-default');
-    const urgente = (val==='urgente' || val==='curto');
-    document.getElementById('urgencia').style.display = urgente ? 'block' : 'none';
+  if(group==='bem') showDepo(depoMapBem[val]||'depo-default');
+  else if(group==='prazo'){
+    showDepo(depoMapPrazo[val]||'depo-default');
+    const isUrgente = (val==='urgente' || val==='recurso');
+    document.getElementById('urgencia').style.display = isUrgente ? 'block':'none';
   }
 
   document.getElementById('btn-next').style.display='flex';
@@ -355,10 +401,10 @@ function avancar(){
   st.step++;
   updateBars();
 
-  document.getElementById('step-1').style.display = st.step===1 ? 'block':'none';
-  document.getElementById('step-2').style.display = st.step===2 ? 'block':'none';
-  document.getElementById('step-3').style.display = st.step===3 ? 'block':'none';
-  document.getElementById('step-4').style.display = st.step===4 ? 'block':'none';
+  document.getElementById('step-1').style.display = st.step===1?'block':'none';
+  document.getElementById('step-2').style.display = st.step===2?'block':'none';
+  document.getElementById('step-3').style.display = st.step===3?'block':'none';
+  document.getElementById('step-4').style.display = st.step===4?'block':'none';
 
   const btn = document.getElementById('btn-next');
 
@@ -367,10 +413,10 @@ function avancar(){
     updateSlider(document.getElementById('credito-range').value);
   } else if(st.step===3){
     btn.style.display='none';
-    const isVeiculo = (st.bem==='veiculo');
-    document.getElementById('prazo-imovel').style.display = isVeiculo ? 'none':'block';
-    document.getElementById('prazo-veiculo').style.display = isVeiculo ? 'block':'none';
     st.prazo = null;
+    document.getElementById('prazo-imovel').style.display  = st.bem==='imovel'  ? 'block':'none';
+    document.getElementById('prazo-veiculo').style.display = st.bem==='veiculo' ? 'block':'none';
+    document.getElementById('prazo-ambos').style.display   = st.bem==='ambos'   ? 'block':'none';
   } else {
     btn.style.display='none';
   }
@@ -391,8 +437,12 @@ function enviar(){
 
   const bL = {imovel:'Imóvel', veiculo:'Veículo', ambos:'Imóvel e Veículo'};
   const pL = {
-    curto:'até 12 meses', medio:'1 a 3 anos', longo:'3+ anos',
-    urgente:'Urgente', '3meses':'Daqui a 3 meses', consciente:'Troca consciente'
+    recurso:'Urgente — tem recurso para lance',
+    planejado:'Planejado (1 a 3 anos)',
+    investimento:'Investimento longo prazo',
+    urgente:'Urgente',
+    '3meses':'Daqui a 3 meses',
+    consciente:'Troca consciente'
   };
 
   const msg = encodeURIComponent(
@@ -400,7 +450,7 @@ function enviar(){
     '*Nome:* '+nome+'\n'+
     '*Interesse:* '+(bL[st.bem]||'-')+'\n'+
     '*Crédito desejado:* '+fmtBRL(st.credito)+'\n'+
-    '*Prazo:* '+(pL[st.prazo]||'-')+'\n\n'+
+    '*Situação:* '+(pL[st.prazo]||'-')+'\n\n'+
     'Gostaria de uma simulação personalizada.'
   );
 
