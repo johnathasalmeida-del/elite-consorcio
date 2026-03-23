@@ -16,24 +16,19 @@
 html{scroll-behavior:smooth}
 body{font-family:'Inter',sans-serif;background:var(--white);color:var(--text);min-height:100vh;overflow-x:hidden}
 .page{max-width:480px;margin:0 auto;padding:36px 24px 60px;min-height:100vh;display:flex;flex-direction:column;justify-content:center}
-
 .logo-wrap{display:flex;justify-content:center;margin-bottom:24px;opacity:0;animation:fadeUp .5s ease forwards .05s}
 .logo-wrap img{height:64px;width:auto;filter:drop-shadow(0 2px 8px rgba(23,196,62,.2))}
-
 .badge{display:inline-flex;align-items:center;gap:7px;background:var(--green-faint);border:1px solid var(--green-border);border-radius:100px;padding:5px 14px;font-size:10px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:var(--green);margin-bottom:16px;opacity:0;animation:fadeUp .5s ease forwards .15s}
 .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--green-light);animation:blink 2s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
-
 .headline-block{margin-bottom:20px;opacity:0;animation:fadeUp .6s ease forwards .25s}
 h1{font-family:'Rajdhani',sans-serif;font-size:clamp(28px,7vw,40px);font-weight:700;line-height:1.1;text-transform:uppercase;letter-spacing:.02em;color:var(--dark);margin-bottom:12px}
 h1 .g{color:var(--green)}
 .subhead{font-size:13px;font-weight:400;color:var(--muted);line-height:1.75}
-
 .proof-strip{display:flex;gap:1px;border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:22px;background:var(--border);opacity:0;animation:fadeUp .6s ease forwards .35s}
 .proof-item{flex:1;text-align:center;padding:14px 6px;background:var(--white)}
 .proof-num{font-family:'Rajdhani',sans-serif;font-size:20px;font-weight:700;color:var(--green);display:block;line-height:1;margin-bottom:3px}
 .proof-lbl{font-size:9px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-
 .depo-wrap{margin-bottom:18px;min-height:88px;opacity:0;animation:fadeUp .6s ease forwards .4s}
 .depo-card{background:var(--green-faint);border:1px solid var(--green-border);border-left:3px solid var(--green);border-radius:10px;padding:14px 15px;display:none;animation:slideIn .35s ease}
 .depo-card.visible{display:block}
@@ -43,14 +38,11 @@ h1 .g{color:var(--green)}
 .depo-author{display:flex;align-items:center;gap:8px}
 .depo-avatar{width:26px;height:26px;border-radius:50%;background:var(--green);display:flex;align-items:center;justify-content:center;font-family:'Rajdhani',sans-serif;font-size:11px;font-weight:700;color:var(--white);flex-shrink:0}
 .depo-name{font-size:11px;font-weight:500;color:var(--muted)}
-
 .steps{display:flex;gap:6px;margin-bottom:16px;opacity:0;animation:fadeUp .5s ease forwards .2s}
 .step-bar{flex:1;height:3px;border-radius:2px;background:var(--border);transition:background .3s ease}
 .step-bar.active{background:var(--green)}
-
 .form-block{opacity:0;animation:fadeUp .6s ease forwards .45s}
 .q-label{font-family:'Rajdhani',sans-serif;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--dark);margin-bottom:11px}
-
 .radio-group{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
 .radio-opt{display:flex;align-items:center;gap:12px;padding:13px 15px;border:1px solid var(--border);border-radius:10px;cursor:pointer;background:var(--white);transition:all .18s ease;position:relative;overflow:hidden}
 .radio-opt::after{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--green);transform:scaleY(0);transition:transform .18s ease;border-radius:2px 0 0 2px}
@@ -63,59 +55,15 @@ h1 .g{color:var(--green)}
 .radio-opt.sel .r-dot{border-color:var(--green)}
 .radio-opt.sel .r-dot::after{opacity:1;transform:scale(1)}
 .r-text{font-size:13px;color:var(--text);line-height:1.4}
-
-/* SLIDER DE CRÉDITO */
-.slider-block{
-  background:var(--green-faint);
-  border:1px solid var(--green-border);
-  border-radius:12px;
-  padding:20px 18px;
-  margin-bottom:16px;
-}
-.slider-valor{
-  font-family:'Rajdhani',sans-serif;
-  font-size:32px;font-weight:700;
-  color:var(--green);
-  text-align:center;
-  display:block;
-  margin-bottom:4px;
-  transition:all .15s ease;
-}
-.slider-label-sub{
-  font-size:11px;color:var(--muted);
-  text-align:center;margin-bottom:16px;
-  letter-spacing:.04em;
-}
+.slider-block{background:var(--green-faint);border:1px solid var(--green-border);border-radius:12px;padding:20px 18px;margin-bottom:16px}
+.slider-valor{font-family:'Rajdhani',sans-serif;font-size:32px;font-weight:700;color:var(--green);text-align:center;display:block;margin-bottom:4px;transition:all .15s ease}
+.slider-label-sub{font-size:11px;color:var(--muted);text-align:center;margin-bottom:16px;letter-spacing:.04em}
 .range-wrap{position:relative;padding:0 2px}
-input[type=range]{
-  -webkit-appearance:none;appearance:none;
-  width:100%;height:6px;
-  background:linear-gradient(to right, var(--green) 0%, var(--green) 50%, var(--border) 50%, var(--border) 100%);
-  border-radius:3px;outline:none;cursor:pointer;
-  transition:background .1s;
-}
-input[type=range]::-webkit-slider-thumb{
-  -webkit-appearance:none;appearance:none;
-  width:24px;height:24px;
-  border-radius:50%;
-  background:var(--white);
-  border:2px solid var(--green);
-  cursor:pointer;
-  box-shadow:0 2px 8px rgba(23,196,62,.25);
-  transition:transform .15s ease;
-}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;background:linear-gradient(to right,var(--green) 0%,var(--green) 50%,var(--border) 50%,var(--border) 100%);border-radius:3px;outline:none;cursor:pointer;transition:background .1s}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:24px;height:24px;border-radius:50%;background:var(--white);border:2px solid var(--green);cursor:pointer;box-shadow:0 2px 8px rgba(23,196,62,.25);transition:transform .15s ease}
 input[type=range]::-webkit-slider-thumb:active{transform:scale(1.15)}
-input[type=range]::-moz-range-thumb{
-  width:24px;height:24px;border-radius:50%;
-  background:var(--white);border:2px solid var(--green);
-  cursor:pointer;box-shadow:0 2px 8px rgba(23,196,62,.25);
-}
-.range-minmax{
-  display:flex;justify-content:space-between;
-  margin-top:8px;font-size:10px;color:var(--muted);
-}
-
-/* INPUTS */
+input[type=range]::-moz-range-thumb{width:24px;height:24px;border-radius:50%;background:var(--white);border:2px solid var(--green);cursor:pointer;box-shadow:0 2px 8px rgba(23,196,62,.25)}
+.range-minmax{display:flex;justify-content:space-between;margin-top:8px;font-size:10px;color:var(--muted)}
 .input-grp{display:flex;flex-direction:column;gap:9px;margin-bottom:16px}
 .inp-wrap{position:relative}
 .inp-ico{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--muted);pointer-events:none;display:flex;align-items:center}
@@ -123,28 +71,22 @@ input[type=range]::-moz-range-thumb{
 .inp::placeholder{color:#C0C4CC}
 .inp:focus{border-color:var(--green);background:var(--green-faint)}
 .inp.err{border-color:var(--danger)}
-
 .urgencia{display:none;background:var(--green-faint);border:1px solid var(--green-border);border-radius:10px;padding:13px 15px;margin-bottom:14px}
 .urgencia strong{display:block;font-family:'Rajdhani',sans-serif;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green);margin-bottom:3px}
 .urgencia p{font-size:11px;color:var(--muted);line-height:1.6}
-
 .btn-next{width:100%;padding:14px 20px;background:var(--white);color:var(--green);border:1.5px solid var(--green);border-radius:10px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:15px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:none;align-items:center;justify-content:center;gap:8px;transition:all .2s ease;margin-bottom:10px}
 .btn-next:hover{background:var(--green-faint);transform:translateY(-1px)}
-
 .btn-cta{width:100%;padding:16px 20px;background:var(--green);color:var(--white);border:none;border-radius:10px;cursor:pointer;font-family:'Rajdhani',sans-serif;font-size:17px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .2s ease;box-shadow:0 4px 16px rgba(23,196,62,.3)}
 .btn-cta:hover{background:#15B038;transform:translateY(-2px);box-shadow:0 6px 24px rgba(23,196,62,.4)}
 .btn-cta:active{transform:translateY(0)}
 .btn-cta svg{width:18px;height:18px;flex-shrink:0}
-
 .disclaimer{margin-top:11px;font-size:10px;color:#C0C4CC;text-align:center;line-height:1.6}
-
 .success-screen{display:none;text-align:center;padding:48px 0;animation:fadeUp .6s ease forwards}
 .suc-icon{width:60px;height:60px;border-radius:50%;background:var(--green-faint);border:2px solid var(--green);display:flex;align-items:center;justify-content:center;margin:0 auto 22px}
 .suc-title{font-family:'Rajdhani',sans-serif;font-size:30px;font-weight:700;text-transform:uppercase;color:var(--dark);margin-bottom:10px}
 .suc-title span{color:var(--green)}
 .suc-text{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:20px}
 .suc-note{font-size:11px;color:#C0C4CC}
-
 @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:440px){.page{padding:28px 18px 50px}}
 </style>
@@ -165,18 +107,9 @@ input[type=range]::-moz-range-thumb{
     </div>
 
     <div class="proof-strip">
-      <div class="proof-item">
-        <span class="proof-num">4.9★</span>
-        <span class="proof-lbl">avaliação</span>
-      </div>
-      <div class="proof-item">
-        <span class="proof-num">98%</span>
-        <span class="proof-lbl">satisfeitos</span>
-      </div>
-      <div class="proof-item">
-        <span class="proof-num">&lt;30min</span>
-        <span class="proof-lbl">retorno garantido</span>
-      </div>
+      <div class="proof-item"><span class="proof-num">4.9★</span><span class="proof-lbl">avaliação</span></div>
+      <div class="proof-item"><span class="proof-num">98%</span><span class="proof-lbl">satisfeitos</span></div>
+      <div class="proof-item"><span class="proof-num">&lt;30min</span><span class="proof-lbl">retorno garantido</span></div>
     </div>
 
     <div class="depo-wrap">
@@ -200,15 +133,25 @@ input[type=range]::-moz-range-thumb{
         <p class="depo-text">"Fiz dois consórcios ao mesmo tempo — um imóvel e um carro. O time da Elite estruturou tudo pra caber no meu orçamento. Incrível."</p>
         <div class="depo-author"><div class="depo-avatar">FB</div><span class="depo-name">Felipe B. — imóvel e veículo conquistados</span></div>
       </div>
+      <div class="depo-card" id="depo-urgente-carro">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Precisava do carro com urgência. A Elite me orientou na estratégia de lance e fui contemplado no 3º mês. Atendimento impecável."</p>
+        <div class="depo-author"><div class="depo-avatar">JM</div><span class="depo-name">Jonas M. — contemplado em 3 meses</span></div>
+      </div>
+      <div class="depo-card" id="depo-3meses-carro">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Planejei minha troca com calma e a Elite me deu todo o suporte. Carta contemplada no prazo certo, sem stress."</p>
+        <div class="depo-author"><div class="depo-avatar">BF</div><span class="depo-name">Bruno F. — troca planejada e realizada</span></div>
+      </div>
+      <div class="depo-card" id="depo-consciente-carro">
+        <div class="depo-stars">★★★★★</div>
+        <p class="depo-text">"Sempre troquei de carro no financiamento e pagava muito de juros. Com a Elite aprendi a fazer isso de forma inteligente e econômica."</p>
+        <div class="depo-author"><div class="depo-avatar">GS</div><span class="depo-name">Gustavo S. — troca consciente sem juros</span></div>
+      </div>
       <div class="depo-card" id="depo-curto-imovel">
         <div class="depo-stars">★★★★★</div>
         <p class="depo-text">"Queria minha casa logo. A Elite me mostrou a estratégia de lance certa e em poucos meses estava com as chaves na mão."</p>
-        <div class="depo-author"><div class="depo-avatar">CS</div><span class="depo-name">Camila S. — chaves em mãos mais rápido que o esperado</span></div>
-      </div>
-      <div class="depo-card" id="depo-curto">
-        <div class="depo-stars">★★★★★</div>
-        <p class="depo-text">"Precisava do carro em poucos meses. A Elite me orientou na estratégia de lance e fui contemplado no 3º mês. Atendimento impecável."</p>
-        <div class="depo-author"><div class="depo-avatar">JM</div><span class="depo-name">Jonas M. — contemplado em 3 meses</span></div>
+        <div class="depo-author"><div class="depo-avatar">CS</div><span class="depo-name">Camila S. — chaves em mãos mais rápido</span></div>
       </div>
       <div class="depo-card" id="depo-medio">
         <div class="depo-stars">★★★★★</div>
@@ -222,7 +165,6 @@ input[type=range]::-moz-range-thumb{
       </div>
     </div>
 
-    <!-- BARRA DE PROGRESSO: 4 etapas agora -->
     <div class="steps">
       <div class="step-bar active" id="bar-1"></div>
       <div class="step-bar" id="bar-2"></div>
@@ -254,7 +196,7 @@ input[type=range]::-moz-range-thumb{
         </div>
       </div>
 
-      <!-- ETAPA 2: FAIXA DE CRÉDITO (SLIDER) -->
+      <!-- ETAPA 2: CRÉDITO (SLIDER) -->
       <div id="step-2" style="display:none">
         <p class="q-label">Qual o valor do crédito que você busca?</p>
         <div class="slider-block">
@@ -263,33 +205,57 @@ input[type=range]::-moz-range-thumb{
           <div class="range-wrap">
             <input type="range" id="credito-range" min="20000" max="1000000" step="5000" value="100000" oninput="updateSlider(this.value)">
           </div>
-          <div class="range-minmax">
-            <span>R$ 20.000</span>
-            <span>R$ 1.000.000</span>
-          </div>
+          <div class="range-minmax"><span>R$ 20.000</span><span>R$ 1.000.000</span></div>
         </div>
       </div>
 
-      <!-- ETAPA 3: PRAZO -->
+      <!-- ETAPA 3: PRAZO — dinâmico por tipo de bem -->
       <div id="step-3" style="display:none">
-        <p class="q-label">Qual seu horizonte de planejamento?</p>
-        <div class="radio-group">
-          <label class="radio-opt" onclick="pick(this,'prazo','curto')">
-            <input type="radio" name="prazo" value="curto">
-            <span class="r-dot"></span>
-            <span class="r-text">Preciso do bem em até 12 meses</span>
-          </label>
-          <label class="radio-opt" onclick="pick(this,'prazo','medio')">
-            <input type="radio" name="prazo" value="medio">
-            <span class="r-dot"></span>
-            <span class="r-text">Tenho de 1 a 3 anos de planejamento</span>
-          </label>
-          <label class="radio-opt" onclick="pick(this,'prazo','longo')">
-            <input type="radio" name="prazo" value="longo">
-            <span class="r-dot"></span>
-            <span class="r-text">Quero investir no longo prazo (3+ anos)</span>
-          </label>
+
+        <!-- Prazo para IMÓVEL ou AMBOS -->
+        <div id="prazo-imovel">
+          <p class="q-label">Qual seu horizonte de planejamento?</p>
+          <div class="radio-group">
+            <label class="radio-opt" onclick="pick(this,'prazo','curto')">
+              <input type="radio" name="prazo" value="curto">
+              <span class="r-dot"></span>
+              <span class="r-text">Preciso do bem em até 12 meses</span>
+            </label>
+            <label class="radio-opt" onclick="pick(this,'prazo','medio')">
+              <input type="radio" name="prazo" value="medio">
+              <span class="r-dot"></span>
+              <span class="r-text">Tenho de 1 a 3 anos de planejamento</span>
+            </label>
+            <label class="radio-opt" onclick="pick(this,'prazo','longo')">
+              <input type="radio" name="prazo" value="longo">
+              <span class="r-dot"></span>
+              <span class="r-text">Quero investir no longo prazo (3+ anos)</span>
+            </label>
+          </div>
         </div>
+
+        <!-- Prazo para VEÍCULO -->
+        <div id="prazo-veiculo" style="display:none">
+          <p class="q-label">Como está seu plano para o veículo?</p>
+          <div class="radio-group">
+            <label class="radio-opt" onclick="pick(this,'prazo','urgente')">
+              <input type="radio" name="prazo" value="urgente">
+              <span class="r-dot"></span>
+              <span class="r-text">Urgente — preciso o quanto antes</span>
+            </label>
+            <label class="radio-opt" onclick="pick(this,'prazo','3meses')">
+              <input type="radio" name="prazo" value="3meses">
+              <span class="r-dot"></span>
+              <span class="r-text">Daqui a 3 meses — já estou me planejando</span>
+            </label>
+            <label class="radio-opt" onclick="pick(this,'prazo','consciente')">
+              <input type="radio" name="prazo" value="consciente">
+              <span class="r-dot"></span>
+              <span class="r-text">Planejando para uma troca consciente</span>
+            </label>
+          </div>
+        </div>
+
       </div>
 
       <!-- ETAPA 4: DADOS -->
@@ -311,7 +277,7 @@ input[type=range]::-moz-range-thumb{
         </div>
         <div class="urgencia" id="urgencia">
           <strong>Você é prioridade na nossa fila</strong>
-          <p>Clientes com prazo de até 12 meses têm atendimento preferencial. Nosso especialista retorna em até 30 minutos.</p>
+          <p>Atendimento preferencial para quem precisa com urgência. Nosso especialista retorna em até 30 minutos.</p>
         </div>
         <button class="btn-cta" onclick="enviar()">
           <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.09 1.18C.09.6.54.04 1.12.04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L5.43 7.81a16 16 0 006.29 6.29l.95-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
@@ -328,7 +294,6 @@ input[type=range]::-moz-range-thumb{
     </div>
   </div>
 
-  <!-- SUCESSO -->
   <div class="success-screen" id="success">
     <div class="suc-icon">
       <svg width="24" height="24" fill="none" stroke="#17C43E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
@@ -342,13 +307,14 @@ input[type=range]::-moz-range-thumb{
 <script>
 const st = {bem:null, credito:100000, prazo:null, step:1};
 
-const depoMap = {
-  bem:   {imovel:'depo-imovel', veiculo:'depo-veiculo', ambos:'depo-ambos'},
-  prazo: {curto:'depo-curto',   medio:'depo-medio',     longo:'depo-longo'}
+const depoMapBem   = {imovel:'depo-imovel', veiculo:'depo-veiculo', ambos:'depo-ambos'};
+const depoMapPrazo = {
+  curto:'depo-curto-imovel', medio:'depo-medio', longo:'depo-longo',
+  urgente:'depo-urgente-carro', '3meses':'depo-3meses-carro', consciente:'depo-consciente-carro'
 };
 
 function fmtBRL(v){
-  if(v>=1000000) return 'R$ 1.000.000';
+  if(parseInt(v)>=1000000) return 'R$ 1.000.000';
   return 'R$ '+Number(v).toLocaleString('pt-BR');
 }
 
@@ -356,8 +322,8 @@ function updateSlider(val){
   st.credito = parseInt(val);
   document.getElementById('slider-display').textContent = fmtBRL(val);
   const pct = (val - 20000) / (1000000 - 20000) * 100;
-  const el = document.getElementById('credito-range');
-  el.style.background = `linear-gradient(to right, var(--green) ${pct}%, var(--border) ${pct}%)`;
+  document.getElementById('credito-range').style.background =
+    `linear-gradient(to right, var(--green) ${pct}%, var(--border) ${pct}%)`;
 }
 
 function showDepo(id){
@@ -371,11 +337,13 @@ function pick(el, group, val){
   el.classList.add('sel');
   st[group] = val;
 
-  if(group==='prazo' && st.bem==='imovel' && val==='curto') showDepo('depo-curto-imovel');
-  else { const id=depoMap[group]?.[val]; if(id) showDepo(id); }
-
-  if(group==='prazo' && val==='curto') document.getElementById('urgencia').style.display='block';
-  else if(group==='prazo') document.getElementById('urgencia').style.display='none';
+  if(group==='bem'){
+    showDepo(depoMapBem[val] || 'depo-default');
+  } else if(group==='prazo'){
+    showDepo(depoMapPrazo[val] || 'depo-default');
+    const urgente = (val==='urgente' || val==='curto');
+    document.getElementById('urgencia').style.display = urgente ? 'block' : 'none';
+  }
 
   document.getElementById('btn-next').style.display='flex';
   updateBars();
@@ -384,7 +352,6 @@ function pick(el, group, val){
 function avancar(){
   if(st.step===1 && !st.bem) return;
   if(st.step===3 && !st.prazo) return;
-
   st.step++;
   updateBars();
 
@@ -397,10 +364,14 @@ function avancar(){
 
   if(st.step===2){
     btn.style.display='flex';
-    updateSlider(100000);
+    updateSlider(document.getElementById('credito-range').value);
   } else if(st.step===3){
     btn.style.display='none';
-  } else if(st.step===4){
+    const isVeiculo = (st.bem==='veiculo');
+    document.getElementById('prazo-imovel').style.display = isVeiculo ? 'none':'block';
+    document.getElementById('prazo-veiculo').style.display = isVeiculo ? 'block':'none';
+    st.prazo = null;
+  } else {
     btn.style.display='none';
   }
 }
@@ -418,8 +389,11 @@ function enviar(){
   if(!nome){ ni.classList.add('err'); ni.focus(); return; }
   if(!wpp){  wi.classList.add('err'); wi.focus(); return; }
 
-  const bL   = {imovel:'Imóvel', veiculo:'Veículo', ambos:'Imóvel e Veículo'};
-  const pL   = {curto:'até 12 meses', medio:'1 a 3 anos', longo:'3+ anos'};
+  const bL = {imovel:'Imóvel', veiculo:'Veículo', ambos:'Imóvel e Veículo'};
+  const pL = {
+    curto:'até 12 meses', medio:'1 a 3 anos', longo:'3+ anos',
+    urgente:'Urgente', '3meses':'Daqui a 3 meses', consciente:'Troca consciente'
+  };
 
   const msg = encodeURIComponent(
     'Olá! Vim pelo site da Elite Consórcio.\n\n'+
@@ -433,7 +407,6 @@ function enviar(){
   document.getElementById('main-form').style.display='none';
   document.getElementById('success').style.display='block';
   document.getElementById('nome-suc').textContent = nome.split(' ')[0];
-
   setTimeout(()=>{ window.location.href='https://wa.me/5588920002641?text='+msg; }, 2400);
 }
 
